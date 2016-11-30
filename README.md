@@ -27,8 +27,31 @@ The application is accepted if:
 ### Explain the algorithm used in exercise 2. Use a flowchart, structogram or pseudo code. [2p]
 #### Your answer:
 
+      **pseudo code:**
+
+      get input(file name)
+
+      initialize a variable to 0, this represents the number 'a'-s in the text
+
+      try to open the file for reading using the input as a filename:
+         - store it in a variable
+      if the file cannot be opened(file not exist):
+         - return number 'a'-s (which is 0 now)
+
+      for each line in file (which is stored in a variable):
+         - go through all the characters in a line and if it's equal to 'a':
+               - increment the variable which represents the number 'a'-s
+
+      return the number 'a'-s
+
+
 ### How can you get a random number in python? [2p]
 #### Your answer:
 
+      the random package must be imported into the file:
+         if you want to get a random integer between 2 numbers including them: random.randint(number1, number2)
+         if you want to get a random float: random.random() --> returns a random float between 0 and 1 (including them)
+
 ### What does M stand for in MVC? [2p]
 #### Your answer:
+      M stands for the Model component in the MVC design pattern. It's used for manage and manipulate the data and containing the logic of the application.
