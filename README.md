@@ -34,12 +34,12 @@ The application is accepted if:
       initialize a variable to 0, this represents the number 'a'-s in the text
 
       try to open the file for reading using the input as a filename:
-         - store it in a variable
+         - store it in a variable named fr
       if the file cannot be opened(file not exist):
          - return number 'a'-s (which is 0 now)
 
-      for each line in file (which is stored in a variable):
-         - go through all the characters in a line and if it's equal to 'a':
+      for each line in file (which is stored in fr):
+         - go through all the characters in the actual line and if it's equal to 'a':
                - increment the variable which represents the number 'a'-s
 
       return the number 'a'-s
